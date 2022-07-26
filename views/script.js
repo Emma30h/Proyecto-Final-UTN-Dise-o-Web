@@ -31,7 +31,7 @@ const typed = new Typed(".typed", {
 });
 
 //LOADER
-window.addEventListener("load", ()=>{
-    console.log("Entre");
-    document.getElementById("loader").classList.toggle("loader2");
-});
+// window.addEventListener("load", ()=>{
+//     console.log("Entre");
+//     document.getElementById("loader").classList.toggle("loader2");
+// });
