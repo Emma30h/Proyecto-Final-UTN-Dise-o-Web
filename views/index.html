@@ -4,40 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerro Grande</title>
-    <link rel="stylesheet" href="../public/style.css">
+    <title>BEER</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../public/normalize.css">
     <!-- FONT AWSOME -->
     <script src="https://kit.fontawesome.com/e8cd0e84d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
     <div class="container">
-        <header class="header">
-            <div class="logo">Logo</div>
+        <header class="header" id="header">
+            <div class="logo">
+                <img src="../public/img/logo.jpg" alt="">
+            </div>
             <div class="menu-hamburguesa" id="menu-hamburguesa"><i class="fa-solid fa-bars" id="icono__menu-hamburguesa"></i></div>
             <ul class="nav" id="nav">
-                <li><a href="#showcase" id="opcion">Inicio</a></li>
+                <li><a href="#header" id="opcion">Inicio</a></li>
                 <li><a href="#nosotros" id="opcion">Nosotros</a></li>
+                <li><a href="#encontranos" id="opcion">De donde somos</a></li>
+                <li><a href="galeria.html" id="opcion">Galeria</a></li>
+                <li><a href="catalogo.html" id="opcion">Catalogo</a></li>
                 <li><a href="#contacto" id="opcion">Contacto</a></li>
-                <li><a href="#redes-sociales" id="opcion">Redes Sociales</a></li>
+                
             </ul>
         </header>
         <main>
             <section class="showcase" id="showcase">
-
+                <h1>Deleite su paladar!</h1>
+                <a href="catalogo.html" class="ver-mas">Ver mas >></a>
             </section>
+
             <section class="nosotros" id="nosotros">
+                <h2>Sobre nosotros</h2>
+                <p>
+                    Craft Beer es un emprendimiento familiar ligado la producción de cerveza artesanal. Las  recetas aplicadas en los productos son aquellas autenticas que fueron heredadas por nuestros ancestros alemanes del Volga,  que emigraron a Argentina en busca de nuevas oportunidades a fines del siglo XIX.  
+                </p>
+                <br>
+                <p>
+                    Nuestra cultura cervecera sostiene con convicción que la birra no es para beber, si no que tal producto merece ser deleitado por cada habitante de este mundo que ama el placer fugaz. 
+                </p>
+                <br>
+                <p>
+                    Nuestra cultura cervecera sostiene con convicción que la birra no es para beber, si no que tal producto merece ser deleitado por cada habitante de este mundo que ama el placer fugaz. 
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, molestias. Eligendi laudantium fugiat laboriosam eos quod totam nisi deleniti placeat!
+                </p>
 
+                <img src="../public/img/nosotros-cerveza.png" alt="">
             </section>
+            
+            <section class="encontranos" id="encontranos">
+                <h2>Encontranos</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33079.515123150006!2d-65.11783083327863!3d-31.17551244915962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942c54aa68215145%3A0xa6e886651ec82c07!2sSan%20Carlos%20Minas%2C%20C%C3%B3rdoba!5e1!3m2!1ses-419!2sar!4v1657763323630!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
             <section class="contacto" id="contacto">
-
+                <form class="form"  action="https://formspree.io/f/xknyezyk"
+                method="POST">
+                    <div class="form__container">
+                        <h2 class="form__title">Contactame</h2>
+                        <input type="text" class="form__input form__input-nombre" placeholder="Nombre" name="name" required>
+                        <input type="email" class="form__input form__input-mail" placeholder="E-mail" name="email" required>
+                        <textarea class="form__input form__input--message" placeholder="Mensaje..." name="message" required></textarea>
+                        <button 
+                            type="submit" class="button" id="button">
+                                <span class="button__texto">Enviar</span>
+                        </button>
+                        <script src="button.js"></script>
+                        <!-- <input type="submit" value="Enviar" class="form__cta"> -->                      
+                    </div>
+                </form>
             </section>
+
             <section class="redes-sociales" id="redes-sociales">
+                <h2>Nuestras Redes</h2>
+                <div class="icon-container">
+
+                    <div class="icon">
+                        <svg height="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+    
+                    <div class="icon">
+                        <svg height="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+    
+                    <div class="icon">
+                        <svg height="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+    
+                    <div class="icon">
+                        <svg height="80" width="80">
+                            <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                </div>
+                
 
             </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <h2 class="titulo"><span class="typed"></span></h2>
+        </footer>
+        <div class="copyright">
+            <p>Created by EHDesign Company</p>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/views/script.js"></script>   
 </body>
 </html>
