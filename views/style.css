@@ -119,7 +119,24 @@ h2{
 
 .showcase h1{
     margin-top: 50px;
+    font-size: 30px;
     color: rgb(43, 21, 13);
+    animation: txtAnimation 7s ease 4s infinite;
+}
+
+@keyframes txtAnimation{
+    0%{
+        color: rgb(43, 21, 13);
+        text-shadow: 0px 0px 7px 7px rgba(255, 255, 255, 1);
+    }
+    50%{
+        color: rgb(233, 8, 8);
+        text-shadow: 0px 0px 20px rgb(239, 116, 9);
+    }
+    100%{
+        color: rgb(43, 21, 13);
+        text-shadow: 0px 0px 7px 7px rgba(255, 255, 255, 1);
+    }
 }
 
 .ver-mas{
@@ -133,6 +150,7 @@ h2{
 .ver-mas:hover{
     font-weight: bold;
     background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 6px #f2f2f2;
 }
 
 /*NOSOTROS*/
@@ -412,6 +430,10 @@ svg circle{
     color: white;
     font-size: 10px;
 }
+.copyright p:hover{
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
 
 /*LOADER*/
 
@@ -496,6 +518,9 @@ svg circle{
         background-size: cover;
         background-attachment: fixed;
     }
+    .showcase h1{
+        font-size: 50px;
+    }
     .nosotros{
         background-color: #000;
     }
@@ -575,7 +600,7 @@ svg circle{
     .ver-mas{
         display: block;
         position: absolute;
-        top: 40%;
+        top: 50%;
     }
     .nosotros img{
         width: 300px;

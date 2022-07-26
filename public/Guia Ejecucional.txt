@@ -1,0 +1,43 @@
+GUIA EJECUCIONAL
+
+Paginas web de inspiracion:
+https://www.centralbier.com.ar/
+https://penondelaguila.com/
+
+Colores:
+-#f3f3f3 blanco agrisado
+
+-rgb(93, 51, 35) marrón
+
+-rgba(243, 169, 9, 0.935) amarillo mostaza
+
+-#000 negro
+
+-rgb(233, 8, 8) rojo
+
+Fuentes:
+-Lobster
+-Oswald
+-Anton
+
+Recursos de otros sitios web:
+-Hero Patterns
+-Web Gradients
+-Google Fonts
+-Font Awesome
+-Pexels
+-Unsplash
+-Libreria JavaScript Typed.js
+
+OBSERVACION!
+-En la carpeta Views se encuentran los archivos de tipo .html, .css y .js.
+Esta decision fue tomada al notar que a la hora de cargar la pagina, se hacia muy lento la performancia de la misma cuando los archivos .css estaban en la
+carpeta public.
+Para mayor dinamismo, los archivos de tipo mencionados previamente se encuentran en una misma carpeta, asi rompiendo con uno de los requisitos
+del trabajo integrador.
+
+
+-First-Mobile:
+.IPHONE 12 PRO
+.SAMSUNG GALAXY S8+
+
