@@ -30,7 +30,7 @@ const typed = new Typed(".typed", {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
-// LOADER
+// LOADERgit 
 window.addEventListener("load", ()=>{
     console.log("Entre");
     document.getElementById("loader").classList.toggle("loader2");
